@@ -15,6 +15,7 @@ type Product = {
   selectedSize: string;
 };
 
+
 // Cart context type definition
 type CartContextType = {
   cart: Product[];

@@ -33,7 +33,7 @@ export default function RecentBlog() {
 
       {/* Image Below Categories */}
       <div className="mt-6 flex justify-center w-full">
-        <img src="/images/pics.jpg" alt="pc" className="rounded-md w-full h-auto" />
+        <Image src="/images/pics.jpg" alt="pc" height={500} width={90} />
       </div>
       <p className="text-2xl font-medium">Recent Posts</p>
 

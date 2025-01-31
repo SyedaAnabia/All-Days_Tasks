@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { IoMdStarOutline } from "react-icons/io";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import Image from 'next/image';
 
 // Navigation Component
 function Navigation() {
@@ -28,7 +29,7 @@ const OurProducts = [
     discount: "-30%",
     price: "Rp 2.500.000",
     originalPrice: "Rp 3.500.000",
-    image: "/images/image-1.png",
+    Image: "/images/image-1.png",
   },
   {
     id: 2,
@@ -36,7 +37,7 @@ const OurProducts = [
     fullname: "Stylish cafe chair",
     price: "Rp 2.500.000",
     originalPrice: "",
-    image: "/images/image-2.png",
+    Image: "/images/image-2.png",
   },
   {
     id: 3,
@@ -45,7 +46,7 @@ const OurProducts = [
     discount: "-50%",
     price: "Rp 7.000.000",
     originalPrice: "Rp 14.000.000",
-    image: "/images/image-3.png",
+    Image: "/images/image-3.png",
   },
   {
     id: 4,
@@ -53,7 +54,7 @@ const OurProducts = [
     fullname: "Outdoor bar table and stool",
     price: "Rp 500.000",
     originalPrice: "",
-    image: "/images/image-4.png",
+    Image: "/images/image-4.png",
   },
 ];
 
@@ -79,7 +80,7 @@ function Products() {
                 <div
                   className="flex h-full w-full bg-no-repeat bg-center bg-cover relative group-hover:scale-105 transition-transform duration-300"
                   style={{
-                    backgroundImage: `url(${product.image})`,
+                    backgroundImage: `url(${product.Image})`,
                   }}
                 >
                   {/* Discount Badge */}
@@ -133,7 +134,7 @@ function Page() {
 <div className="flex flex-col lg:flex-row mt-10 w-full px-4 lg:px-20 gap-10">
   {/* Image on the Left */}
   <div className="w-full lg:w-1/2">
-    <img
+    <Image
       src="/images/blog.jpg"
       alt="Asgaard Sofa"
       className="w-full h-[300px] lg:h-[500px] object-cover rounded"
@@ -244,7 +245,7 @@ function Page() {
         guitar-influenced leather strap enables easy and stylish trave
       </p>
       <div className="flex justify-center items-center mt-10 mb-10">
-        <img src="/images/sofa2.png" alt="sf" className='w-[1239px] h-[348px]' />
+        <Image src="/images/sofa2.png" alt="sf" className='w-[1239px] h-[348px]' />
       </div>
       {/* Related Products Section */}
       <Products />

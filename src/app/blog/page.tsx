@@ -652,7 +652,7 @@ import Hero from "@/components/common/Hero";
 import BlogSection from "./sections/blog-section";
 import RecentBlog from "./sections/recent-blog";
 import Shipping from "@/components/shipping"
-import Image from "next/image";
+
 
 export default function BlogPage() {
   return (
@@ -660,7 +660,7 @@ export default function BlogPage() {
     {/* Background Section */}
     <div
       className="relative w-full sm:w-[1440px] h-[316px] sm:h-[500px] bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/shop.png')" }}
+      style={{ backgroundImage: "url('/images/blog.png')" }}
     >
       <div className="flex flex-col justify-center items-center text-center text-white h-full bg-gradient-to-t">
         <h2 className="text-4xl mb-2 font-bold text-black">Blog</h2>
